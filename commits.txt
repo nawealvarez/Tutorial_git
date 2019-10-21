@@ -1,0 +1,17 @@
+commit 6c17c2903d3cb0692626aba6ae0a639dde7134e0
+Author: nawealvarez <nawe7depb@gmail.com>
+Date:   Mon Oct 21 16:22:00 2019 -0300
+
+    Manejo de funciones
+
+commit dfc2b344c651414eea13a1d2d18dab9fd8556830
+Author: nawealvarez <nawe7depb@gmail.com>
+Date:   Mon Oct 21 15:56:35 2019 -0300
+
+    agregamos factorial
+
+commit dc71844ea5445f0c8e9f57bd81d9366ed5c04741
+Author: nawealvarez <nawe7depb@gmail.com>
+Date:   Mon Oct 21 15:38:56 2019 -0300
+
+    Initial commit
