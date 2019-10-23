@@ -53,6 +53,7 @@ def factorial_recursivo(num):
 def fact_ternario(num):
     return num *fact_ternario(num-1) if num >1 else 1
 
+nombre = input('Ingrese su nombre: ')
 opcion=int(input("Elija 1 para numeros primos, 2 para factorial de un numero o 3 para ordenar una lista: "))
 if opcion == 1:
     numeros_primos()
@@ -82,4 +83,4 @@ if opcion == 3:
     elif cualq == 2:
         print("La lista desordenada: ", lista, " la lista ordenada: ", bubbleSort(lista))
 
-print('Gracias por usar el sistema :D')
+print('Gracias por usar el sistema ',nombre, ' :D')
