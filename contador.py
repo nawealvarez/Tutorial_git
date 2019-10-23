@@ -22,12 +22,27 @@ def numeros_primos():
         print("El número ", a, " añadido: ", i, "\n")
         a += 1
 
+def ordenar(numeros):
+    ordenada = sorted(numeros)
+    return ordenada
+
+def bubbleSort(numeros):
+    comparaciones = 0
+    n = len(numeros)
+    for i in range(1, n):
+        for j in range(n-i):
+            comparaciones += 1
+
+            if numeros[j] > numeros[j+1]:
+                numeros[j], numeros[j+1] = numeros[j+1], numeros[j]
+    return numeros
+
 def factorial(num):
-    resultad = 1
+    resultado = 1
     while num > 0:
         resultado *= num
         num -= 1
-    return resultad
+    return resultado
 
 def factorial_recursivo(num):
     if num > 1:
@@ -38,7 +53,7 @@ def factorial_recursivo(num):
 def fact_ternario(num):
     return num *fact_ternario(num-1) if num >1 else 1
 
-opcion=int(input("Elija 1 para numeros primos o 2 para factorial de un numero: "))
+opcion=int(input("Elija 1 para numeros primos, 2 para factorial de un numero o 3 para ordenar una lista: "))
 if opcion == 1:
     numeros_primos()
     
@@ -51,3 +66,18 @@ if opcion == 2:
         print("El factorial de ", numero, " es: ", factorial_recursivo(numero)) 
     elif cualq == 3:
         print("El factorial de ", numero, " es: ", fact_ternario(numero))   
+
+if opcion == 3:
+    lista = []
+    respuesta = True
+    while respuesta:
+        numero = int(input('Ingrese un numero a la lista: '))
+        lista.append(numero)
+        op = int(input('Desea añadir otro numero? 1-Si, 2-No: '))
+        if op == 2:
+            respuesta = False
+    cualq = random.randint(1, 2)
+    if cualq == 1:
+        print("La lista desordenada: ", lista, " la lista ordenada: ", ordenar(lista))
+    elif cualq == 2:
+        print("La lista desordenada: ", lista, " la lista ordenada: ", bubbleSort(lista))
