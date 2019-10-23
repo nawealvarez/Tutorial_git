@@ -81,3 +81,5 @@ if opcion == 3:
         print("La lista desordenada: ", lista, " la lista ordenada: ", ordenar(lista))
     elif cualq == 2:
         print("La lista desordenada: ", lista, " la lista ordenada: ", bubbleSort(lista))
+
+print('Gracias por usar el sistema :D')
